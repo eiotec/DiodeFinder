@@ -1,0 +1,168 @@
+\hypertarget{classSceneObject}{\section{\-Scene\-Object \-Class \-Reference}
+\label{classSceneObject}\index{\-Scene\-Object@{\-Scene\-Object}}
+}
+
+
+\-The \hyperlink{classSceneObject}{\-Scene\-Object} class. \-It's a container for objects found on scene, based on filtered diodes.  
+
+
+
+
+{\ttfamily \#include $<$sceneobject.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSceneObject_a0d268d96d77dbeb45b07a6442e2f4d0d}{\hyperlink{classSceneObject_a0d268d96d77dbeb45b07a6442e2f4d0d}{\-Scene\-Object} ()}\label{classSceneObject_a0d268d96d77dbeb45b07a6442e2f4d0d}
+
+\begin{DoxyCompactList}\small\item\em \-Empty constructor. \end{DoxyCompactList}\item 
+\hyperlink{classSceneObject_a0bbd4971b6fd3b3ad2ea35ec14e6a617}{\-Scene\-Object} (\-Point \hyperlink{classSceneObject_a2b8c4779bd48231183257d0470c32f67}{base\-Point}, \-Point \hyperlink{classSceneObject_a11385bdb16c8fe6136484078bee1fb61}{short\-Point}, \-Point \hyperlink{classSceneObject_a78c848200dc2f5baa59393547e6f7259}{long\-Point})
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{classSceneObject_a88edb8cb30023a191e069bd58a023284}{distance} (\-Point $\ast$p1, \-Point $\ast$p2)
+\begin{DoxyCompactList}\small\item\em \-Calculate distance between points. \end{DoxyCompactList}\item 
+static float \hyperlink{classSceneObject_a28760e8940891ea1b853c94dcba78613}{calc\-Rotation} (\hyperlink{classSceneObject}{\-Scene\-Object} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em \-Calculate \hyperlink{classSceneObject}{\-Scene\-Object}'s rotation. \end{DoxyCompactList}\item 
+static float \hyperlink{classSceneObject_a1e9ae1624ec912371dbb2313d16e3034}{calc\-Size} (\hyperlink{classSceneObject}{\-Scene\-Object} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em \-Calculate \hyperlink{classSceneObject}{\-Scene\-Object}'s size. \end{DoxyCompactList}\item 
+static float \hyperlink{classSceneObject_a3625deecbe9dbea41241a7b52fa5ad00}{diff} (\hyperlink{classSceneObject}{\-Scene\-Object} $\ast$obj1, \hyperlink{classSceneObject}{\-Scene\-Object} $\ast$obj2)
+\begin{DoxyCompactList}\small\item\em \-Calculates difference between given objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSceneObject_a2b8c4779bd48231183257d0470c32f67}{\-Point \hyperlink{classSceneObject_a2b8c4779bd48231183257d0470c32f67}{base\-Point}}\label{classSceneObject_a2b8c4779bd48231183257d0470c32f67}
+
+\begin{DoxyCompactList}\small\item\em \-Base point of the triangle. \end{DoxyCompactList}\item 
+\hypertarget{classSceneObject_a78c848200dc2f5baa59393547e6f7259}{\-Point \hyperlink{classSceneObject_a78c848200dc2f5baa59393547e6f7259}{long\-Point}}\label{classSceneObject_a78c848200dc2f5baa59393547e6f7259}
+
+\begin{DoxyCompactList}\small\item\em \-Point near to base\-Point. \end{DoxyCompactList}\item 
+\hypertarget{classSceneObject_a11385bdb16c8fe6136484078bee1fb61}{\-Point \hyperlink{classSceneObject_a11385bdb16c8fe6136484078bee1fb61}{short\-Point}}\label{classSceneObject_a11385bdb16c8fe6136484078bee1fb61}
+
+\begin{DoxyCompactList}\small\item\em \-Point far from base\-Point. \end{DoxyCompactList}\item 
+\hypertarget{classSceneObject_a48d8fc075acf0e2c86bb7168fa3af4a8}{float \hyperlink{classSceneObject_a48d8fc075acf0e2c86bb7168fa3af4a8}{rotation}}\label{classSceneObject_a48d8fc075acf0e2c86bb7168fa3af4a8}
+
+\begin{DoxyCompactList}\small\item\em \-Calculated rotation. \end{DoxyCompactList}\item 
+\hypertarget{classSceneObject_ab3592bd76e316b0d5be799f6b86b6757}{float \hyperlink{classSceneObject_ab3592bd76e316b0d5be799f6b86b6757}{size}}\label{classSceneObject_ab3592bd76e316b0d5be799f6b86b6757}
+
+\begin{DoxyCompactList}\small\item\em \-Size of the object based on distance between points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-The \hyperlink{classSceneObject}{\-Scene\-Object} class. \-It's a container for objects found on scene, based on filtered diodes. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classSceneObject_a0bbd4971b6fd3b3ad2ea35ec14e6a617}{\index{\-Scene\-Object@{\-Scene\-Object}!\-Scene\-Object@{\-Scene\-Object}}
+\index{\-Scene\-Object@{\-Scene\-Object}!SceneObject@{\-Scene\-Object}}
+\subsubsection[{\-Scene\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Scene\-Object\-::\-Scene\-Object} (
+\begin{DoxyParamCaption}
+\item[{\-Point}]{base\-Point, }
+\item[{\-Point}]{short\-Point, }
+\item[{\-Point}]{long\-Point}
+\end{DoxyParamCaption}
+)}}\label{classSceneObject_a0bbd4971b6fd3b3ad2ea35ec14e6a617}
+
+
+\-Constructor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em base\-Point} & \-Base point of the triangle. \\
+\hline
+{\em short\-Point} & \-Point near to base\-Point. \\
+\hline
+{\em long\-Point} & \-Point far from base\-Point. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classSceneObject_a28760e8940891ea1b853c94dcba78613}{\index{\-Scene\-Object@{\-Scene\-Object}!calc\-Rotation@{calc\-Rotation}}
+\index{calc\-Rotation@{calc\-Rotation}!SceneObject@{\-Scene\-Object}}
+\subsubsection[{calc\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Scene\-Object\-::calc\-Rotation} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Scene\-Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classSceneObject_a28760e8940891ea1b853c94dcba78613}
+
+
+\-Calculate \hyperlink{classSceneObject}{\-Scene\-Object}'s rotation. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+\hypertarget{classSceneObject_a1e9ae1624ec912371dbb2313d16e3034}{\index{\-Scene\-Object@{\-Scene\-Object}!calc\-Size@{calc\-Size}}
+\index{calc\-Size@{calc\-Size}!SceneObject@{\-Scene\-Object}}
+\subsubsection[{calc\-Size}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Scene\-Object\-::calc\-Size} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Scene\-Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classSceneObject_a1e9ae1624ec912371dbb2313d16e3034}
+
+
+\-Calculate \hyperlink{classSceneObject}{\-Scene\-Object}'s size. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+\hypertarget{classSceneObject_a3625deecbe9dbea41241a7b52fa5ad00}{\index{\-Scene\-Object@{\-Scene\-Object}!diff@{diff}}
+\index{diff@{diff}!SceneObject@{\-Scene\-Object}}
+\subsubsection[{diff}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Scene\-Object\-::diff} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Scene\-Object} $\ast$}]{obj1, }
+\item[{{\bf \-Scene\-Object} $\ast$}]{obj2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classSceneObject_a3625deecbe9dbea41241a7b52fa5ad00}
+
+
+\-Calculates difference between given objects. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em obj1} & \\
+\hline
+{\em obj2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+\hypertarget{classSceneObject_a88edb8cb30023a191e069bd58a023284}{\index{\-Scene\-Object@{\-Scene\-Object}!distance@{distance}}
+\index{distance@{distance}!SceneObject@{\-Scene\-Object}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Scene\-Object\-::distance} (
+\begin{DoxyParamCaption}
+\item[{\-Point $\ast$}]{p1, }
+\item[{\-Point $\ast$}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classSceneObject_a88edb8cb30023a191e069bd58a023284}
+
+
+\-Calculate distance between points. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+sceneobject.\-h\item 
+sceneobject.\-cpp\end{DoxyCompactItemize}

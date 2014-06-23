@@ -1,0 +1,206 @@
+\hypertarget{classDiodeFinder}{\section{\-Diode\-Finder \-Class \-Reference}
+\label{classDiodeFinder}\index{\-Diode\-Finder@{\-Diode\-Finder}}
+}
+
+
+\-Main \hyperlink{classDiodeFinder}{\-Diode\-Finder} class.  
+
+
+
+
+{\ttfamily \#include $<$diodefinder.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDiodeFinder_a898dc874b4f8395b70508e5bcea528a8}{\-Diode\-Finder} (\-Q\-Label $\ast$\hyperlink{classDiodeFinder_aec17871d18595315f121c7f7e0cec985}{camera\-\_\-label}, \-Q\-Label $\ast$\hyperlink{classDiodeFinder_abc59dcea66433ca0ae0f2baab2d768eb}{processed\-\_\-label}, \-Q\-Label $\ast$\hyperlink{classDiodeFinder_a80896a062265941aef7a43bac48fb748}{output\-\_\-label})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classDiodeFinder}{\-Diode\-Finder} \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a84ff5cee670565eebb2aaf3d31222c0d}{\hyperlink{classDiodeFinder_a84ff5cee670565eebb2aaf3d31222c0d}{\-Diode\-Finder} ()}\label{classDiodeFinder_a84ff5cee670565eebb2aaf3d31222c0d}
+
+\begin{DoxyCompactList}\small\item\em \-Empty constructor. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a40a14a6b4f7c190e93edb50f34572b15}{\hyperlink{classDiodeFinder_a40a14a6b4f7c190e93edb50f34572b15}{$\sim$\-Diode\-Finder} ()}\label{classDiodeFinder_a40a14a6b4f7c190e93edb50f34572b15}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classDiodeFinder_a41adea8693a8e81dbf61a36c39c91dd6}{is\-Ok} ()
+\begin{DoxyCompactList}\small\item\em \-Checks whether video capture node is opened successfully. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a71a80a3fdf18af14e2616220d2cba861}{void \hyperlink{classDiodeFinder_a71a80a3fdf18af14e2616220d2cba861}{capture} ()}\label{classDiodeFinder_a71a80a3fdf18af14e2616220d2cba861}
+
+\begin{DoxyCompactList}\small\item\em \-Captures video frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a5c5f10c380842f93a5c0c1e4e4e3afb3}{void \hyperlink{classDiodeFinder_a5c5f10c380842f93a5c0c1e4e4e3afb3}{process} ()}\label{classDiodeFinder_a5c5f10c380842f93a5c0c1e4e4e3afb3}
+
+\begin{DoxyCompactList}\small\item\em \-Processing given camera frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a5a3404a6c041a6d4573e9a99b4c08f50}{void \hyperlink{classDiodeFinder_a5a3404a6c041a6d4573e9a99b4c08f50}{find\-Points} ()}\label{classDiodeFinder_a5a3404a6c041a6d4573e9a99b4c08f50}
+
+\begin{DoxyCompactList}\small\item\em \-Finds points on process\-\_\-mat and saves them to points vector. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a91081fdda0f688fc07ce7cbe2adc49c3}{void \hyperlink{classDiodeFinder_a91081fdda0f688fc07ce7cbe2adc49c3}{find\-Objects} ()}\label{classDiodeFinder_a91081fdda0f688fc07ce7cbe2adc49c3}
+
+\begin{DoxyCompactList}\small\item\em \-Finds objects among already found points within the scene. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_aedd9857714460c97d7c5bba73e316bb8}{void \hyperlink{classDiodeFinder_aedd9857714460c97d7c5bba73e316bb8}{find\-Stable\-Objects} ()}\label{classDiodeFinder_aedd9857714460c97d7c5bba73e316bb8}
+
+\begin{DoxyCompactList}\small\item\em \-Finds stable objects (filters found objects on the scene). \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a283d788301734c1038b1c8c24f773a74}{void \hyperlink{classDiodeFinder_a283d788301734c1038b1c8c24f773a74}{output} ()}\label{classDiodeFinder_a283d788301734c1038b1c8c24f773a74}
+
+\begin{DoxyCompactList}\small\item\em \-Modifies \-Q\-Pixmap for \-Qt widget and saves data to node file. \end{DoxyCompactList}\item 
+void \hyperlink{classDiodeFinder_a2166fa1d7f2283c476343efd4a2f8a31}{enable\-F\-I\-F\-O} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em \-Enables \-F\-I\-F\-O output for visualization. \end{DoxyCompactList}\item 
+\-Vec3b \hyperlink{classDiodeFinder_adb6177847ec4b212f598e5111fae03bf}{pick\-Color} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \-Picks color from captured frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDiodeFinder_aec17871d18595315f121c7f7e0cec985}{\-Q\-Label $\ast$ \hyperlink{classDiodeFinder_aec17871d18595315f121c7f7e0cec985}{camera\-\_\-label}}\label{classDiodeFinder_aec17871d18595315f121c7f7e0cec985}
+
+\begin{DoxyCompactList}\small\item\em \-Q\-Label with current camera frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_abc59dcea66433ca0ae0f2baab2d768eb}{\-Q\-Label $\ast$ \hyperlink{classDiodeFinder_abc59dcea66433ca0ae0f2baab2d768eb}{processed\-\_\-label}}\label{classDiodeFinder_abc59dcea66433ca0ae0f2baab2d768eb}
+
+\begin{DoxyCompactList}\small\item\em \-Q\-Label with current processed frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a80896a062265941aef7a43bac48fb748}{\-Q\-Label $\ast$ \hyperlink{classDiodeFinder_a80896a062265941aef7a43bac48fb748}{output\-\_\-label}}\label{classDiodeFinder_a80896a062265941aef7a43bac48fb748}
+
+\begin{DoxyCompactList}\small\item\em \-Q\-Label with program output (results). \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_aff87584df7147b928aed83cc5d453fed}{\-Video\-Capture \hyperlink{classDiodeFinder_aff87584df7147b928aed83cc5d453fed}{video\-Cap}}\label{classDiodeFinder_aff87584df7147b928aed83cc5d453fed}
+
+\begin{DoxyCompactList}\small\item\em \-Video capture class. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_aa93cdfa519f3f1cb7dcac650275c5a51}{\-Mat \hyperlink{classDiodeFinder_aa93cdfa519f3f1cb7dcac650275c5a51}{camera\-\_\-mat}}\label{classDiodeFinder_aa93cdfa519f3f1cb7dcac650275c5a51}
+
+\begin{DoxyCompactList}\small\item\em \-Matrix for captured frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_afbeb7b9e3300a7628448a6041926b6bb}{\-Mat \hyperlink{classDiodeFinder_afbeb7b9e3300a7628448a6041926b6bb}{processed\-\_\-mat}}\label{classDiodeFinder_afbeb7b9e3300a7628448a6041926b6bb}
+
+\begin{DoxyCompactList}\small\item\em \-Matrix for processed frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_ac441e543067e1c47f483836db713186a}{\-Mat \hyperlink{classDiodeFinder_ac441e543067e1c47f483836db713186a}{output\-\_\-mat}}\label{classDiodeFinder_ac441e543067e1c47f483836db713186a}
+
+\begin{DoxyCompactList}\small\item\em \-Matrix for output (result) frame. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_aaf03708ae5259bdef969133f4551d6ba}{int \hyperlink{classDiodeFinder_aaf03708ae5259bdef969133f4551d6ba}{hu}}\label{classDiodeFinder_aaf03708ae5259bdef969133f4551d6ba}
+
+\begin{DoxyCompactList}\small\item\em \-H\-S\-L palette's \-H upper limit. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a369110b3e58e7aa8bb669f0fd2984ec4}{int \hyperlink{classDiodeFinder_a369110b3e58e7aa8bb669f0fd2984ec4}{hd}}\label{classDiodeFinder_a369110b3e58e7aa8bb669f0fd2984ec4}
+
+\begin{DoxyCompactList}\small\item\em \-H\-S\-L palette's \-H down limit. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a63f6da4672929568153e2694d9f0ab22}{int \hyperlink{classDiodeFinder_a63f6da4672929568153e2694d9f0ab22}{lu}}\label{classDiodeFinder_a63f6da4672929568153e2694d9f0ab22}
+
+\begin{DoxyCompactList}\small\item\em \-H\-S\-L palette's \-L upper limit. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a69b4913ce2b3fd001a90d3b06483ee6c}{int \hyperlink{classDiodeFinder_a69b4913ce2b3fd001a90d3b06483ee6c}{ld}}\label{classDiodeFinder_a69b4913ce2b3fd001a90d3b06483ee6c}
+
+\begin{DoxyCompactList}\small\item\em \-H\-S\-L palette's \-L down limit. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_afa9c82480423babe609fe445c06026a0}{int \hyperlink{classDiodeFinder_afa9c82480423babe609fe445c06026a0}{su}}\label{classDiodeFinder_afa9c82480423babe609fe445c06026a0}
+
+\begin{DoxyCompactList}\small\item\em \-H\-S\-L palette's \-S upper limit. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_aaa1d86b4f6751e24fb326401a5e178e2}{int \hyperlink{classDiodeFinder_aaa1d86b4f6751e24fb326401a5e178e2}{sd}}\label{classDiodeFinder_aaa1d86b4f6751e24fb326401a5e178e2}
+
+\begin{DoxyCompactList}\small\item\em \-H\-S\-L palette's \-S down limit. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a0d723b5a9975f0ba9f0eafd7cb9f579d}{int \hyperlink{classDiodeFinder_a0d723b5a9975f0ba9f0eafd7cb9f579d}{blur}}\label{classDiodeFinder_a0d723b5a9975f0ba9f0eafd7cb9f579d}
+
+\begin{DoxyCompactList}\small\item\em \-Blur filter size. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_ad94e4ece7944eeddc8c6949955bfbe0e}{int \hyperlink{classDiodeFinder_ad94e4ece7944eeddc8c6949955bfbe0e}{median}}\label{classDiodeFinder_ad94e4ece7944eeddc8c6949955bfbe0e}
+
+\begin{DoxyCompactList}\small\item\em \-Median filter size. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a6f81269a38bf1aa29b3623938e3f9b11}{int \hyperlink{classDiodeFinder_a6f81269a38bf1aa29b3623938e3f9b11}{t\-Ratio}}\label{classDiodeFinder_a6f81269a38bf1aa29b3623938e3f9b11}
+
+\begin{DoxyCompactList}\small\item\em \-Triangle ratio (1\-:t\-Ratio). \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a8f11137f020ea74b1baf318a25989684}{float \hyperlink{classDiodeFinder_a8f11137f020ea74b1baf318a25989684}{epsilon}}\label{classDiodeFinder_a8f11137f020ea74b1baf318a25989684}
+
+\begin{DoxyCompactList}\small\item\em \-Object finder accuracy (distance $\sim$ +/-\/epsilon). \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_ae8e3f7f936cacf2c6a3b144358012953}{vector$<$ \-Point $>$ \hyperlink{classDiodeFinder_ae8e3f7f936cacf2c6a3b144358012953}{points}}\label{classDiodeFinder_ae8e3f7f936cacf2c6a3b144358012953}
+
+\begin{DoxyCompactList}\small\item\em \-Current points on the scene. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a12e673d1cf9916ba26ec52c36a053079}{vector$<$ \hyperlink{classSceneObject}{\-Scene\-Object} $>$ \hyperlink{classDiodeFinder_a12e673d1cf9916ba26ec52c36a053079}{objects}}\label{classDiodeFinder_a12e673d1cf9916ba26ec52c36a053079}
+
+\begin{DoxyCompactList}\small\item\em \-Current objects on the scene. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a610957a6d33e716f593de491416dbf18}{vector$<$ \hyperlink{classSceneObject}{\-Scene\-Object} $>$ \hyperlink{classDiodeFinder_a610957a6d33e716f593de491416dbf18}{objects\-History}}\label{classDiodeFinder_a610957a6d33e716f593de491416dbf18}
+
+\begin{DoxyCompactList}\small\item\em \-History of recent this-\/$>$objects vector's content. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_ad2af56469b06cf8efdc27069e3407226}{vector$<$ \hyperlink{classStableObject}{\-Stable\-Object} $>$ \hyperlink{classDiodeFinder_ad2af56469b06cf8efdc27069e3407226}{stable\-Objects}}\label{classDiodeFinder_ad2af56469b06cf8efdc27069e3407226}
+
+\begin{DoxyCompactList}\small\item\em \-Objects recoginzed as stable on the scene. \end{DoxyCompactList}\item 
+\hypertarget{classDiodeFinder_a882815fe3c490b495772d6afe81bf252}{bool \hyperlink{classDiodeFinder_a882815fe3c490b495772d6afe81bf252}{save\-Data}}\label{classDiodeFinder_a882815fe3c490b495772d6afe81bf252}
+
+\begin{DoxyCompactList}\small\item\em \-Whether to save data to data.\-fifo nod. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDiodeFinder_a9000a144c4139665cef56446d922e654}{static fstream \hyperlink{classDiodeFinder_a9000a144c4139665cef56446d922e654}{fifo}}\label{classDiodeFinder_a9000a144c4139665cef56446d922e654}
+
+\begin{DoxyCompactList}\small\item\em \-F\-I\-F\-O stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Main \hyperlink{classDiodeFinder}{\-Diode\-Finder} class. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classDiodeFinder_a898dc874b4f8395b70508e5bcea528a8}{\index{\-Diode\-Finder@{\-Diode\-Finder}!\-Diode\-Finder@{\-Diode\-Finder}}
+\index{\-Diode\-Finder@{\-Diode\-Finder}!DiodeFinder@{\-Diode\-Finder}}
+\subsubsection[{\-Diode\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Diode\-Finder\-::\-Diode\-Finder} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Label $\ast$}]{camera\-\_\-label, }
+\item[{\-Q\-Label $\ast$}]{processed\-\_\-label, }
+\item[{\-Q\-Label $\ast$}]{output\-\_\-label}
+\end{DoxyParamCaption}
+)}}\label{classDiodeFinder_a898dc874b4f8395b70508e5bcea528a8}
+
+
+\hyperlink{classDiodeFinder}{\-Diode\-Finder} \-Constructor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em camera\-\_\-pixmap} & \-Q\-Pixmap for \-Qt with current camera frame. \\
+\hline
+{\em processed\-\_\-pixmap} & \-Q\-Pixmap for \-Qt with current processed frame. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDiodeFinder_a2166fa1d7f2283c476343efd4a2f8a31}{\index{\-Diode\-Finder@{\-Diode\-Finder}!enable\-F\-I\-F\-O@{enable\-F\-I\-F\-O}}
+\index{enable\-F\-I\-F\-O@{enable\-F\-I\-F\-O}!DiodeFinder@{\-Diode\-Finder}}
+\subsubsection[{enable\-F\-I\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Diode\-Finder\-::enable\-F\-I\-F\-O} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classDiodeFinder_a2166fa1d7f2283c476343efd4a2f8a31}
+
+
+\-Enables \-F\-I\-F\-O output for visualization. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em filename} & \-F\-I\-F\-O filename. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDiodeFinder_a41adea8693a8e81dbf61a36c39c91dd6}{\index{\-Diode\-Finder@{\-Diode\-Finder}!is\-Ok@{is\-Ok}}
+\index{is\-Ok@{is\-Ok}!DiodeFinder@{\-Diode\-Finder}}
+\subsubsection[{is\-Ok}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Diode\-Finder\-::is\-Ok} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDiodeFinder_a41adea8693a8e81dbf61a36c39c91dd6}
+
+
+\-Checks whether video capture node is opened successfully. 
+
+\begin{DoxyReturn}{\-Returns}
+\-True if ok. 
+\end{DoxyReturn}
+\hypertarget{classDiodeFinder_adb6177847ec4b212f598e5111fae03bf}{\index{\-Diode\-Finder@{\-Diode\-Finder}!pick\-Color@{pick\-Color}}
+\index{pick\-Color@{pick\-Color}!DiodeFinder@{\-Diode\-Finder}}
+\subsubsection[{pick\-Color}]{\setlength{\rightskip}{0pt plus 5cm}\-Vec3b {\bf \-Diode\-Finder\-::pick\-Color} (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classDiodeFinder_adb6177847ec4b212f598e5111fae03bf}
+
+
+\-Picks color from captured frame. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em x} & \-X coord on camera\-\_\-mat. \\
+\hline
+{\em y} & \-Y coors on camera\-\_\-mat. \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+diodefinder.\-h\item 
+diodefinder.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+Material Vehicle : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        DiffuseMap : Repeat Textures/vehicle.jpg
+        Diffuse : 0.6 1.0 0.6 1.0
+        VertexLighting : false
+        UseMaterialColors : true
+        ShadowMapSize : 0.0
+        FilterMode : 0
+        WardIso : false
+        HardwareShadows : false
+        LowQuality : false
+        SeparateTexCoord : false
+        EnvMapAsSphereMap : false
+        UseAlpha : false
+        VTangent : false
+        HighQuality : false
+        LATC : false
+        SteepParallax : false
+        Shininess : 100.0
+     }
+    AdditionalRenderState {
+      PointSprite Off
+    }
+}

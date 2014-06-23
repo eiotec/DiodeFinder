@@ -1,0 +1,13 @@
+Material Stone : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        DiffuseMap : Repeat Textures/stone.jpg
+        UseMaterialColors : false
+        SteepParallax : false
+        UseVertexColor : false
+        Minnaert : false
+     }
+    AdditionalRenderState {
+      Wireframe Off
+      DepthWrite Off
+    }
+}
